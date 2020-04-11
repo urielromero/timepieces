@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    
+    <title>Timepiece</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<!--<body style="background: url(watch-back.png) no-repeat; background-size: 100%; ">-->
+    <body>
+        
+       
+    
+    <nav>
+        <ul class="topnav" id="dropDownClick">
+
+            <li id="logo"><a href="http://127.0.0.1:55121/index.html#"><img src="minilogo.png"></a></li>
+            <li><a href="#new">New</a></li>
+           
+            <li><a href="#classics">Classics</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#collection">Collection</a></li>
+            
+            <li class="dropdownIcon"><a href="javascript:void(0);" 
+            onclick="dropDownMenu()">&#9776;</a></li>
+            <li class="topnav-right"><a href="#search">Search</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li> 
+           
+        </ul>
+    </nav>
+        
+        <div>
+     <img src="watch-back.png" class="background-watch">
+        </div>
+        
+        
+    <div height="821" class="sc-pjtZy hcTYTX">
+        <span name="moveBottom" class="sc-AxgMl ewSVXJ">    <svg aria-labelledby="" height="15"              width="15" viewBox="0 0 15 15"                  xmlns="http://www.w3.org/2000/svg"              role="img">
+            <path d="m15 5.41-7.5 7.91-7.5-7.91 1.95-1.95 5.55 5.83 5.55-5.83z" id="moveBottom"></path>
+           </svg>
+        </span>
+    </div>
+            
+        
+    
+        <br>
+    <div class="container" >
+        <div class="row">
+            
+             <div class="col-4">
+                <div class="images">
+                    <img src="england.png">
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <div class="images">
+                    <img id="imagen" src="silver.png">
+                   <a class="buy" href="#shopnow">SHOP NOW</a>
+                </div>
+            </div>
+             <div class="col-4">
+                <article>
+                    <p>
+                        <b>Aliqua</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                </article>
+            </div>
+           
+        </div>
+<!--
+        <div class="button">
+            <button>BUY</button>
+        </div>
+-->
+         <div class="row">
+            
+             <div class="col-4">
+                  <article>
+                    <p> <b>Quis</b> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </article>
+            </div>
+            
+            <div class="col-4">
+                <div class="images">
+                    <img src="uboat.png">
+                    <a class="buy" href="#shopnow">SHOP NOW</a>
+                </div>
+            </div>
+             <div class="col-4">
+                <div class="images">
+                    <img src="boat.png">
+                </div>
+            </div>
+           
+        </div>
+         <div class="row">
+             <div class="col-4">
+                <div class="images">
+                    <img src="eiffel.png">
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <div class="images">
+                    <img src="skeleton.png">
+                    <a class="buy" href="#shopnow">SHOP NOW</a>
+                </div>
+            </div>
+             <div class="col-4">
+                <article>
+                    <p> <b>Utenim</b> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </article>
+            </div>
+           
+        </div>
+    </div>
+        
+   <div>
+        <video controls>
+            <source src="eso_observatory--the_enclosure_of_the_next_generation_transit_survey_NGTS_at_paranal_eso_european_southern_observatory_europescienceuniverse.mp4" type="video/mp4">
+        </video>    
+    </div>
+        
+        <footer class="footer" style>
+            <div class="row">
+                <div class="col-3 footerMenu">
+                    <h1>COMPANY</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                </div>
+                 <div class="col-3 footerMenu">
+                    <h1>PRODUCTS</h1>
+                        <ul>
+                            <li>Swess Made</li>
+                            <li>Turbillon</li>
+                            <li>Automatic</li>
+                        </ul>
+                </div>
+                <div class="col-3 footerMenu">
+                    <h1>LEARN MORE</h1>
+                        <ul>
+                            <li>Sponsor</li>
+                            <li>Development</li>
+                            <li>Brand</li>
+                        </ul>
+                </div>
+                <div class="col-3 footerMenu">
+                    <h1>FOLLOW US</h1>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>YouTube</li>
+                        </ul>
+                </div >
+            </div>
+            
+            <div class="bottomLogo">
+                <img src="Picture2.png">
+            </div>
+        </footer>
+    
+
+        <script>
+            
+         function dropDownMenu(){
+                var x=document.getElementById("dropDownClick");
+             
+             console.log(x.className);
+                if(x.className==="topnav"){
+                    /*chnage topnav to topnav.responsive*/
+                    x.className +=" responsive";
+                }else{
+                    x.className="topnav"
+                }
+                
+            }
+        </script>
+
+    
+</body>
+
+
+
+
+
+</html>
