@@ -1,0 +1,274 @@
+/*
+https://www.fontsquirrel.com/tools/webfont-generator
+*/
+
+nav,header,footer{
+display: block;
+    margin: 0;
+    padding:0;
+}
+
+body
+{
+    line-height: 1;
+    margin: 0;
+    background-color: black;
+}
+
+article p{
+    font-size: 20px;
+    padding: 20px;
+    color: darkgrey;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    
+}
+
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.row::after{
+    display: table;/*reset row*/
+    clear: both;/*clear any floats on elements*/
+    content: "";/*clear content*/
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+
+
+/*############### NAV BAR ################*/
+
+ul img{
+    border-radius: 8px;
+    width: 40px;
+}
+
+nav{
+    width: 100%;
+    margin: 0; 
+}
+
+ul.topnav{
+    background-color: #222129;
+    overflow: hidden;  /*no scrolling on overflow */
+    margin: 0;
+    padding-top: 10px;
+    
+}
+
+ul.topnav li {
+    margin:0;
+    padding: 5px;
+    list-style: none;
+    float:left;
+    font-family: rattem_hullaxregular;   
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+ul.topnav li.dropdownIcon{
+    float: right;
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+ul.topnav li a {
+    text-decoration: none;
+    color: darkgrey;
+    
+    text-transform: uppercase;
+   
+}
+ul.topnav li a:hover {
+    color:#a3935d;
+}
+
+/*############## arrow icon ############*/
+
+.hcTYTX svg {
+    fill: blue;
+    text-align: center;
+}
+
+
+
+/*#############     3 Columns ############*/
+div.col-4 p:hover{
+    color:#a3935d;
+    
+}
+
+div.col-4 {
+    list-style: none;
+    text-align: center;
+}
+
+div.col-4 a{
+    color: black;
+    padding: 5px;
+    border-radius: 6px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+div.col-4 a:hover{
+    
+    text-decoration: none;
+    color:#a3935d;
+    font-family:sans-serif;
+    background-color: #120240;
+    
+}
+
+
+@font-face {
+    font-family: 'rattem_hullaxregular';
+    src: url("NHaasGroteskTXPro-75Bd.ttf"); 
+    font-weight: bold;
+    
+}
+
+.background-watch{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    color: darkgray;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #26004d;
+    
+}
+
+div.col-3 li{
+    list-style-type: none;
+}
+
+div.col-3 li:hover {
+   color:#a3935d;
+}
+
+/*#############CUSTOM FORMAT#######*/
+div.images img{
+    display: block;
+    width: 270px;
+    margin: auto;
+    border-radius: 6px;
+}
+
+.bottomLogo{
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+.bottomLogo img{
+/*
+  -webkit-box-shadow: 5px 3px 43px 40px #110E35; 
+box-shadow: 5px 3px 43px 40px #110E35;
+*/
+    border: 4px outset gold;
+    width: 80px;
+    height: 70px;
+    box-shadow: 3px 3px 80px 5px rgba(0,0,0,1);
+    
+    
+}    
+
+video{
+    width: 480px;
+}
+
+/*############ MOBILE VIEW ##########*/
+
+
+@media screen and (max-width:700px){
+
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    
+    ul.topnav li.dropdownIcon{
+        float: right;
+        display:block;
+        position: absolute;
+        padding-top: 15px;
+    }
+    
+     ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .col-4{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .row{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    ul.topnav.responsive{
+        /*so list itesm dont move around*/
+   
+        position: relative;
+        background-color: #222129;
+    }
+    
+    ul.topnav.responsive li{
+       
+        display: inline;
+        float: none;/*cancels out previos float=left from ul.topnav li*/
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+        
+    }   
+    
+    div.footerMenu{
+        width: 50%;
+        display: block;
+    }
+
+    
+    
+}
+
