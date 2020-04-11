@@ -114,10 +114,31 @@ ul.topnav li a:hover {
 /*############## arrow icon ############*/
 
 .hcTYTX svg {
-    fill: blue;
+    
+    fill:lightgray;
     text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-750%);
+        opacity: 1;
+        }
+    49%{
+        transform: rotate(0) translateY(-675%);
+        opacity: 0.7;
+        }
+    100%{
+        transform: rotate(0) translateY(-600%);
+        opacity: 0;
+        }
+}
+
+.hcTYTX{
+    animation: yourAnimation 2s infinite 0s linear;
+}
 
 
 /*#############     3 Columns ############*/
@@ -149,7 +170,6 @@ div.col-4 a:hover{
     background-color: #120240;
     
 }
-
 
 @font-face {
     font-family: 'rattem_hullaxregular';
@@ -203,8 +223,7 @@ box-shadow: 5px 3px 43px 40px #110E35;
     width: 80px;
     height: 70px;
     box-shadow: 3px 3px 80px 5px rgba(0,0,0,1);
-    
-    
+       
 }    
 
 video{
@@ -212,7 +231,6 @@ video{
 }
 
 /*############ MOBILE VIEW ##########*/
-
 
 @media screen and (max-width:700px){
 
