@@ -67,6 +67,7 @@ article p{
 ul img{
     border-radius: 8px;
     width: 40px;
+    margin-left: 100px
 }
 
 nav{
@@ -92,6 +93,7 @@ ul.topnav li {
 
 ul.topnav li.topnav-right{
     float: right;
+    margin-right: 20px
 }
 ul.topnav li.dropdownIcon{
     float: right;
@@ -100,22 +102,27 @@ ul.topnav li.dropdownIcon{
     right: 0;
 }
 
-ul.topnav li a {
+ul.topnav li a,i {
     text-decoration: none;
     color: darkgrey;
+    
     
     text-transform: uppercase;
    
 }
-ul.topnav li a:hover {
+ul.topnav li a:hover, i:hover {
     color:#a3935d;
+}
+
+#search{
+   margin-right: 100px;
 }
 
 /*############## arrow icon ############*/
 
-.hcTYTX svg {
+.arrow svg {
     
-    fill:lightgray;
+    fill:purple;
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
@@ -136,7 +143,7 @@ ul.topnav li a:hover {
         }
 }
 
-.hcTYTX{
+.arrow{
     animation: yourAnimation 2s infinite 0s linear;
 }
 
@@ -188,15 +195,16 @@ footer {
     color: darkgray;
     font-family: sans-serif;
     text-align: center;
-    background-color: #26004d;
+    background-color: #180b2e;
     
 }
 
 div.col-3 li{
     list-style-type: none;
+    margin: 5px;
 }
 
-div.col-3 li:hover {
+div.col-3 li:hover, i:hover {
    color:#a3935d;
 }
 
@@ -206,6 +214,7 @@ div.images img{
     width: 270px;
     margin: auto;
     border-radius: 6px;
+    
 }
 
 .bottomLogo{
@@ -222,13 +231,30 @@ box-shadow: 5px 3px 43px 40px #110E35;
     border: 4px outset gold;
     width: 80px;
     height: 70px;
-    box-shadow: 3px 3px 80px 5px rgba(0,0,0,1);
+    box-shadow: 3px 3px 150px 5px rgba(0,0,0,1);
        
 }    
 
 video{
     width: 100%;
 }
+
+ul li i{
+    width: 25%;
+    margin: 5px;
+}
+#fb{
+    color: #3b5998;
+
+}
+#twitter{
+    color: #00acee;
+}
+#youtube{
+    color: #c4302b;
+}
+
+
 
 /*############ MOBILE VIEW ##########*/
 
