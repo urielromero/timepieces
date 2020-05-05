@@ -30,7 +30,6 @@ article p{
 
 .row{
     width: 100%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -66,9 +65,10 @@ article p{
 /*############### NAV BAR ################*/
 
 ul img{
-    border-radius: 8px;
+    border-radius: 4px;
     width: 40px;
-    margin-left: 100px
+    margin-left: 100px;
+    padding-top: 0px;
 }
 
 nav{
@@ -119,16 +119,6 @@ ul.topnav li a:hover, i:hover {
    margin-right: 100px;
 }
 
-/*############## arrow icon ############*/
-
-.arrow svg {
-    
-    fill:purple;
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
 @keyframes yourAnimation{
     0%{
         transform: rotate(0) translateY(-750%);
@@ -143,11 +133,6 @@ ul.topnav li a:hover, i:hover {
         opacity: 0;
         }
 }
-
-.arrow{
-    animation: yourAnimation 2s infinite 0s linear;
-}
-
 
 /*#############     3 Columns ############*/
 div.col-4 p:hover{
@@ -168,6 +153,7 @@ div.col-4 a{
     padding-left: 30px;
     padding-right: 30px;
     
+    
 }
 
 div.col-4 a:hover{
@@ -175,15 +161,14 @@ div.col-4 a:hover{
     text-decoration: none;
     color:#a3935d;
     font-family:sans-serif;
-    background-color: #120240;
-    
+/*    background-color: #120240;*/
+    background-color: white;
 }
 
 @font-face {
     font-family: 'rattem_hullaxregular';
     src: url("NHaasGroteskTXPro-75Bd.ttf"); 
     font-weight: bold;
-    
 }
 
 .background-watch{
@@ -203,6 +188,7 @@ footer {
 div.col-3 li{
     list-style-type: none;
     margin: 5px;
+    display: block;
 }
 
 div.col-3 li:hover, i:hover {
@@ -212,7 +198,7 @@ div.col-3 li:hover, i:hover {
 /*#############CUSTOM FORMAT#######*/
 div.images img{
     display: block;
-    width: 270px;
+    width: 370px;
     margin: auto;
     border-radius: 6px;
     
@@ -259,7 +245,7 @@ ul li i{
 
 /*############ MOBILE VIEW ##########*/
 
-@media screen and (max-width:700px){
+@media screen and (max-width:680px){
 
     ul.topnav li:not(:nth-child(1)){
         display: none;
@@ -279,28 +265,28 @@ ul li i{
         right: 0;
     }
     
+    ul.topnav li.topnav-right{
+    float: left;
+    margin-right: 20px
+}
+    
     .col-4{
         width: 100%;
         margin: 0;
     }
-    
-    .row{
-        display: block;
-        width: 100%;
-        overflow: hidden;
-    }
-    
+
     ul.topnav.responsive{
-        /*so list itesm dont move around*/
-   
+        /*so list items dont move around*/
         position: relative;
         background-color: #222129;
+        
     }
+    
     
     ul.topnav.responsive li{
        
         display: inline;
-        float: none;/*cancels out previos float=left from ul.topnav li*/
+        float: none; /*cancels out previos float=left from ul.topnav li*/
     }
     ul.topnav.responsive li a{
         display: block;
@@ -310,7 +296,18 @@ ul li i{
     
     div.footerMenu{
         width: 50%;
-        display: block;
+        display:block;
+      
+    }
+    
+   ul.topnav.responsive li.topnav-right{
+       display: block;
+       
+    }
+    
+    ul img{
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
 
     
