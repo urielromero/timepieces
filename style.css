@@ -268,7 +268,7 @@ ul li i{
     ul.topnav li.topnav-right{
     float: left;
     margin-right: 20px
-}
+    }
     
     .col-4{
         width: 100%;
@@ -279,7 +279,6 @@ ul li i{
         /*so list items dont move around*/
         position: relative;
         background-color: #222129;
-        
     }
     
     
@@ -309,8 +308,6 @@ ul li i{
         margin-left: 0px;
         margin-bottom: 10px;
     }
-
-    
     
 }
 
