@@ -116,7 +116,7 @@ ul.topnav li a:hover, i:hover {
 }
 
 #search{
-   margin-right: 100px;
+margin-right: 100px;
 }
 
 @keyframes yourAnimation{
@@ -152,6 +152,7 @@ div.col-4 a{
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
+    
     
     
 }
@@ -286,10 +287,11 @@ ul li i{
        
         display: inline;
         float: none; /*cancels out previos float=left from ul.topnav li*/
+        text-align: center;
     }
     ul.topnav.responsive li a{
         display: block;
-        text-align: left;
+        text-align: center;
         
     }   
     
@@ -302,11 +304,21 @@ ul li i{
    ul.topnav.responsive li.topnav-right{
        display: block;
        
+       
     }
     
     ul img{
         margin-left: 0px;
         margin-bottom: 10px;
+    }
+    
+    
+    div.images {
+       padding-top: 10px;
+    }
+    
+    #search{
+        margin-right: 0;
     }
     
 }
