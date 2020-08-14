@@ -12,13 +12,12 @@ body
 {
     line-height: 1;
     margin: 0;
-    background-color: black;
-    
+    background: linear-gradient(#000000, #0A0A0A);
 }
 
 article p{
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     color: darkgrey;
 }
 .container {
@@ -208,7 +207,7 @@ div.col-3 li:hover, i:hover {
 div.images img{
     display: block;
     width: 370px;
-    height: 396;
+    height: 396px;
     margin: auto;
     border-radius: 6px;
     
@@ -254,6 +253,76 @@ ul li i{
 }
 
 
+
+
+/*############# WATCH ANIMATION #######*/
+
+
+/* Layout */
+.clockbox,
+#clock {
+    width: 100%;
+    opacity: 80%
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: gray;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: lightgray;
+}
+.hour-marks {
+    fill: none;
+    stroke: lightgray;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: gray;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: gray;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: gold;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+/*    this adds a smooth swipe per second */
+    transition: transform .5s ease-in-out;
+}
+
+.col-6{
+    text-align: center;
+    color: darkgray;
+}
 
 /*############ MOBILE VIEW ##########*/
 
@@ -306,16 +375,8 @@ ul li i{
         
     }   
     
-    div.footerMenu{
-        width: 50%;
-        display:block;
-      
-    }
-    
    ul.topnav.responsive li.topnav-right{
        display: block;
-       
-       
     }
     
     ul img{
@@ -330,6 +391,18 @@ ul li i{
     
     #search{
         margin-right: 0;
+    }
+    
+    .paragraph-two{
+        display: none;
+    }
+    
+    div.footerMenu{
+        width: 50%;
+        display:block;
+    }
+    div.footerMenu h1{
+        font-size: 26px;
     }
     
 }
