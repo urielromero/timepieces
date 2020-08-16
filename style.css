@@ -1,9 +1,12 @@
 /*
 https://www.fontsquirrel.com/tools/webfont-generator
 */
+*{
+    box-sizing: border-box;
+}
 
 nav,header,footer{
-display: block;
+    display: block;
     margin: 0;
     padding:0;
 }
@@ -54,11 +57,6 @@ article p{
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
-*{
-    box-sizing: border-box;
-}
-
-
 
 /*############### NAV BAR ################*/
 
@@ -66,34 +64,35 @@ ul img{
     border-radius: 4px;
     width: 40px;
     margin-left: 100px;
-    padding-top: 0px;
+    
 }
 
 nav{
     width: 100%;
     margin: 0; 
+    align-items: center;
+    
 }
 
 ul.topnav{
     background-color: #222129;
     overflow: hidden;  /*no scrolling on overflow */
     margin: 0;
-    padding-top: 10px;
-    
 }
 
-ul.topnav li {
-    margin:0;
+ul.topnav li{
     padding: 5px;
     list-style: none;
     float:left;
-    font-family: rattem_hullaxregular;   
+    font-family: rattem_hullaxregular; 
 }
+
 
 ul.topnav li.topnav-right{
     float: right;
     margin-right: 20px
 }
+
 ul.topnav li.dropdownIcon{
     float: right;
     display: none;
@@ -101,12 +100,16 @@ ul.topnav li.dropdownIcon{
     right: 0;
 }
 
+ul.topnav .navbar-links {
+    padding-top: 10px;
+}
+
 ul.topnav li a,i {
     text-decoration: none;
     color: darkgrey;
     text-transform: uppercase;
-   
 }
+
 ul.topnav li a:hover, i:hover {
     color:#a3935d;
 }
@@ -130,7 +133,7 @@ ul.topnav li a:hover, i:hover {
         }
 }
 
-/*#############     3 Columns ############*/
+/*#############     3 Columns Content ############*/
 div.col-4 p:hover{
     color:#a3935d;
     
@@ -174,12 +177,6 @@ a.buy:hover{
     font-weight: bold;
 }
 
-.background-watch{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 footer {
     color: darkgray;
     font-family: sans-serif;
@@ -210,13 +207,11 @@ div.images img{
     height: 396px;
     margin: auto;
     border-radius: 6px;
-    
 }
 
 .bottomLogo{
     text-align: center;
     padding-bottom: 10px;
-    
 }
 
 .bottomLogo img{
@@ -251,7 +246,6 @@ ul li i{
 #youtube{
     color: #c4302b;
 }
-
 
 
 
@@ -338,6 +332,7 @@ ul li i{
         display:block;
         position: absolute;
         padding-top: 15px;
+        padding-right: 15px;
     }
     
      ul.topnav.responsive li.dropdownIcon{
@@ -346,23 +341,27 @@ ul li i{
         right: 0;
     }
     
+/*
     ul.topnav li.topnav-right{
-    float: left;
-    margin-right: 20px
+        float: left;
+        margin-right: 20px
     }
+*/
     
     .col-4{
         width: 100%;
         margin: 0;
     }
+    
+    
+/*################ JS function adds "responsive" to class name #############*/
 
     ul.topnav.responsive{
         /*so list items dont move around*/
         position: relative;
         background-color: #222129;
     }
-    
-    
+
     ul.topnav.responsive li{
        
         display: inline;
@@ -372,21 +371,24 @@ ul li i{
     ul.topnav.responsive li a{
         display: block;
         text-align: center;
-        
     }   
     
    ul.topnav.responsive li.topnav-right{
        display: block;
     }
     
-    ul img{
-        margin-left: 0px;
-        margin-bottom: 10px;
+    ul.topnav.responsive img{
+        margin-top: 5px;
     }
     
+    ul img{
+        margin-left: 0px;
+    }
     
-    div.images {
-       padding-top: 10px;
+    div.images img{
+        padding-top: 20px;
+        width: 270px;
+        height: 296px;
     }
     
     #search{
@@ -402,7 +404,7 @@ ul li i{
         display:block;
     }
     div.footerMenu h1{
-        font-size: 26px;
+        font-size: 24px;
     }
     
 }

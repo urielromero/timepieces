@@ -49,9 +49,11 @@ var interval = setInterval(runTheClock, 1000);
 
 //nav menu function
  function dropDownMenu(){
+     
                 var x=document.getElementById("dropDownClick");
              
              console.log(x.className);
+     
                 if(x.className==="topnav"){
                     /*change topnav to topnav.responsive*/
                     x.className +=" responsive";
