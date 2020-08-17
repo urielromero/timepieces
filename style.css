@@ -1,6 +1,4 @@
-/*
-https://www.fontsquirrel.com/tools/webfont-generator
-*/
+
 *{
     box-sizing: border-box;
 }
@@ -15,7 +13,7 @@ body
 {
     line-height: 1;
     margin: 0;
-    background: linear-gradient(#000000, #0A0A0A);
+    background: linear-gradient(#010101, #0D0D0D);
 }
 
 article p{
@@ -36,6 +34,7 @@ article p{
     flex-wrap: wrap;
     align-items: center;
     padding: 30px;
+    margin-left: 0;
 }
 
 .row::after{
@@ -177,26 +176,39 @@ a.buy:hover{
     font-weight: bold;
 }
 
+
+/*################# FOOTER  #################*/
+
 footer {
     color: darkgray;
     font-family: sans-serif;
     font-size: 1.5em;
-    text-align: center;
     background-color: #281549;
+    padding-left: 8%;
+}
+/*
+.footer .row{
+    display: flex;
+   / align-items: unset;
+}
+*/
+
+footer ul {
+    /*REMOVE LEFT PADDING FROM BULLTS */
+    padding-left: 0;
+}
+
+
+footer li{
+    list-style-type: none;
+    line-height: 30px;
+    display: block;
+    text-align:left;
+    /*REMOVE LEFT PADDING FROM BULLTS */
     
 }
 
-.footer .row{
-    align-items: unset;
-}
-
-div.col-3 li{
-    list-style-type: none;
-    margin: 5px;
-    display: block;
-}
-
-div.col-3 li:hover, i:hover {
+footer li:hover, i:hover {
    color:#a3935d;
 }
 
@@ -212,6 +224,7 @@ div.images img{
 .bottomLogo{
     text-align: center;
     padding-bottom: 10px;
+    background-color: #281549;
 }
 
 .bottomLogo img{
@@ -318,6 +331,7 @@ ul li i{
     color: darkgray;
 }
 
+
 /*############ MOBILE VIEW ##########*/
 
 @media screen and (max-width:680px){
@@ -341,20 +355,14 @@ ul li i{
         right: 0;
     }
     
-/*
-    ul.topnav li.topnav-right{
-        float: left;
-        margin-right: 20px
-    }
-*/
-    
     .col-4{
         width: 100%;
         margin: 0;
     }
     
     
-/*################ JS function adds "responsive" to class name #############*/
+    
+/*#### JS function adds "responsive" to class name ####*/
 
     ul.topnav.responsive{
         /*so list items dont move around*/
@@ -373,7 +381,7 @@ ul li i{
         text-align: center;
     }   
     
-   ul.topnav.responsive li.topnav-right{
+    ul.topnav.responsive li.topnav-right{
        display: block;
     }
     
@@ -395,17 +403,46 @@ ul li i{
         margin-right: 0;
     }
     
+    div.row{
+        margin-left: 0;
+    }
+    
     .paragraph-two{
         display: none;
+    }
+    
+    footer{
+        padding-left: 5%;
     }
     
     div.footerMenu{
         width: 50%;
         display:block;
     }
+    
     div.footerMenu h1{
         font-size: 24px;
+        
     }
+   
     
 }
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
