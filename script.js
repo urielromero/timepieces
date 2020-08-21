@@ -20,31 +20,34 @@ let secPosition =sec*360/60;
 
 
 
+
 // wrapped in a fuction to be able to update clock on real time
 function runTheClock(){
-    
     
     //this segment (2nd block) is added to keep sec hand animation but we no longer rely on DATE query to keep real time but on the browser to do the math. 
     //we could place the first block here insted to keep a more accurate clock w/o animation. Dependent on DATE query.
     //increment in degrees
-    secPosition = secPosition+6;
-    minPosition = minPosition+(6/60);
-    hrPosition = hrPosition+(3/360);
-
-
-
+    
+    //#####seconds hand#####
+    // multiply times 10 for non sweeping seconds hand option.
+  
+    secPosition = (secPosition+0.6);
+    minPosition = minPosition+(6/600);
+    hrPosition = hrPosition+(3/3600);
+    
     //apply as degrees in inline style
     //transform:rotate() is used to move hands in a circular path
     HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
     MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
     SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
     
-    
-    
     //if we placed second block here. time would be a sec behind. We cold add 1 sec to secPosition definition but it is not a good solution. 
+    
+      
 }
 
-var interval = setInterval(runTheClock, 1000);
+// set to 1000 for non sweeping hand along with top changes under "seconds hand"
+var interval = setInterval(runTheClock, 100);
 
 
 //nav menu function
